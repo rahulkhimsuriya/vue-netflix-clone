@@ -1,13 +1,13 @@
 <template>
-  <div>
+  <div class="mt-4">
     <h2 class="ml-4 text-2xl text-white font-bold">{{ title }}</h2>
-    <div class="ml-4 flex gap-4 py-6 overflow-x-auto">
+    <div class="mt-1 ml-4 flex gap-4 py-6 overflow-x-auto">
       <img
         v-for="movie in movies"
         :key="movie.id"
         :src="getMoviePosterPath(movie.poster_path)"
         :alt="movie.original_title"
-        class="h-32 w-48 object-cover rounded opacity-75 transition duration-300 ease-in-out hover:opacity-100 hover:scale-105 shadow hover:shadow-lg"
+        class="h-32 w-48 object-cover opacity-75 rounded transition-all duration-300 ease-in-out hover:opacity-100 hover:scale-105 shadow hover:shadow-lg"
         :class="{ 'h-full': isLarge }"
       />
     </div>

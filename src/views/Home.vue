@@ -1,5 +1,7 @@
 <template>
   <div>
+    <Banner :url="request.netflixOriginals" />
+
     <Row
       :title="'NETFLIX ORIGINALS'"
       :url="request.netflixOriginals"
@@ -25,13 +27,14 @@
 </template>
 
 <script>
-import Row from '@/components/Row.vue'
 import Request from '@/request'
+import Banner from '@/components/Banner.vue'
+import Row from '@/components/Row.vue'
 
 export default {
   name: 'Home',
 
-  components: { Row },
+  components: { Banner, Row },
 
   data() {
     return {
