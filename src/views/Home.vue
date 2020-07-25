@@ -3,6 +3,7 @@
     <Banner :url="request.netflixOriginals" />
 
     <Row
+      class="mt-8"
       :title="'NETFLIX ORIGINALS'"
       :url="request.netflixOriginals"
       :isLarge="true"

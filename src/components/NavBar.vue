@@ -1,10 +1,10 @@
 <template>
   <nav
     ref="main-navbar"
-    class="flex items-center justify-between absolute w-full px-8 py-6 z-10 transition-all duration-500 ease-in-out"
+    class="flex items-center justify-between absolute w-full px-10 py-4 z-10 transition-all duration-500 ease-in-out"
   >
     <a href="/">
-      <img src="../assets/image/logo.png" alt="Netflix" class="h-8" />
+      <img src="../assets/image/logo.png" alt="Netflix" class="h-6" />
     </a>
 
     <div>
@@ -12,7 +12,7 @@
         ><img
           src="../assets/image/avatar.jpg"
           alt="Avatar"
-          class="h-8 w-8 rounded-full object-cover border-2 border-gray-300"
+          class="h-6 w-6 rounded-full object-cover border-2 border-gray-300"
       /></span>
     </div>
   </nav>

@@ -1,10 +1,10 @@
 <template>
-  <div class="w-full object-cover" :style="styles">
+  <div class="w-full object-cover relative" :style="styles">
     <div
-      class="container mx-auto flex flex-col justify-center relative h-full w-full"
+      class="container mx-auto flex flex-col justify-center pt-6 relative h-full w-full"
     >
-      <div class="text-white w-2/5">
-        <h1 class="text-4xl font-bold leading-none">
+      <div class="text-gray-100 w-full max-w-sm mx-4 md:3/4 lg:w-2/5">
+        <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold leading-none">
           {{ movie.original_name }}
         </h1>
 
@@ -21,11 +21,17 @@
           >
         </div>
 
-        <p class="mt-4 text-sm font-normal leading-noramal tracking-wide">
+        <p
+          class="mt-4 text-xs md:text-sm text-gray-400 font-normal leading-noramal tracking-wide"
+        >
           {{ movie.overview }}
         </p>
       </div>
     </div>
+    <div
+      class="w-full h-24 absolute bottom-0"
+      style="background-image: linear-gradient(180deg,transparent,rgba(37,37,37,.61),#111);"
+    ></div>
   </div>
 </template>
 
